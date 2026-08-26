@@ -2,6 +2,8 @@
 
 Homebrew tap for [StayUp](https://github.com/stayup-app/stayup-desktop) — aggregates GitHub changelogs, YouTube, RSS and web pages into one feed.
 
+**Website:** https://stayup-ui.vercel.app
+
 ## Install
 
 ```sh
