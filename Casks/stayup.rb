@@ -1,14 +1,14 @@
 cask "stayup" do
-  version "0.14.0"
+  version "0.14.1"
 
   on_arm do
     url "https://github.com/stayup-app/stayup-desktop/releases/download/v#{version}/StayUp_#{version}_aarch64.dmg"
-    sha256 "70bfaee482aefcaf90229847f1530c87a42d1f7067f007ef19e046f3105f3579"
+    sha256 "7b486b8861bf155f21dbc5c1773e465de87ee110ac1d83464fd685592af7bcb2"
   end
 
   on_intel do
     url "https://github.com/stayup-app/stayup-desktop/releases/download/v#{version}/StayUp_#{version}_x64.dmg"
-    sha256 "4c2afbef863d74db48317af50393a1b1275615fb0b73d441872d0489353dd4e6"
+    sha256 "024b14cd3f3db54de3bb59b16cd158967c5385db54994ff28bf8435038a2b6cd"
   end
 
   name "StayUp"
