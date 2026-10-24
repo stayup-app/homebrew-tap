@@ -17,6 +17,14 @@ cask "stayup" do
 
   app "StayUp.app"
 
+  # The app is not notarized: drop the quarantine flag so Gatekeeper does not
+  # report it as damaged.
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-dr", "com.apple.quarantine", "#{appdir}/StayUp.app"],
+                   sudo: false
+  end
+
   zap trash: [
     "~/Library/Application Support/dev.r-sik.stayup-desktop",
     "~/Library/Preferences/dev.r-sik.stayup-desktop.plist",
